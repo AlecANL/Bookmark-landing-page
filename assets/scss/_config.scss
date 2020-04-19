@@ -1,0 +1,35 @@
+/*Variables*/
+$max-width: 1200px;
+$header-hight: 4rem;
+// Font Family
+$font: 'Rubik', sans-serif;
+/*Colors*/
+// Primary
+$sofBlue: hsl(231, 69%, 60%);
+$softRed: hsl(0, 94%, 66%);
+// Neutral
+$grayishBlue: hsl(229, 8%, 60%);
+$veryBarkBlue: hsl(229, 31%, 21%);
+
+/*Mixin Responsive*/ // Variables
+$breakpoints: (
+  s: 375px,
+  m: 900px,
+  l: 1440px,
+);
+@mixin from($bp) {
+  @if map-has-key($breakpoints, $bp) {
+    @media screen and(min-width: map-get($breakpoints , $bp )) {
+      @content;
+    }
+  } @else {
+    @media screen and(min-width: $bp) {
+      @content;
+    }
+  }
+}
+
+// Fonts
+:root {
+  --body-font-size: 1.2rem;
+}

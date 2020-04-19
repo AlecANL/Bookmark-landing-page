@@ -1,0 +1,125 @@
+/*Variables*/
+/*Colors*/
+/*Mixin Responsive*/
+:root {
+  --body-font-size: 1.2rem; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: var(--body-font-size); }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0; }
+
+.l-container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.main-header {
+  height: 4rem; }
+
+.l-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; }
+
+.logo {
+  margin-left: 1.5rem; }
+  @media screen and (min-width: 900px) {
+    .logo {
+      margin: 0; } }
+
+.icon-nav {
+  margin: 1rem;
+  margin-right: -2rem; }
+  @media screen and (min-width: 900px) {
+    .icon-nav {
+      display: none;
+      margin: 0; } }
+
+.main-nav {
+  position: relative; }
+  @media screen and (min-width: 900px) {
+    .main-nav {
+      position: static; } }
+
+.nav-list {
+  background: rgba(37, 43, 70, 0.671);
+  padding: 5rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: scale(0);
+  z-index: 100; }
+  @media screen and (min-width: 900px) {
+    .nav-list {
+      transform: scale(1);
+      position: static;
+      padding: 0;
+      background: transparent; } }
+  .nav-list__item {
+    list-style: none;
+    margin: 1rem 2rem; }
+    @media screen and (min-width: 900px) {
+      .nav-list__item {
+        display: inline-block; } }
+  .nav-list__link {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    padding: 0.5rem; }
+    @media screen and (min-width: 900px) {
+      .nav-list__link {
+        color: #252b46; } }
+    .nav-list__link:hover {
+      color: #fa5757;
+      cursor: pointer;
+      border: 1px solid #fa5757;
+      border-radius: 0.2rem; }
+
+.active {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out; }
+
+@media screen and (min-width: 900px) {
+  .close {
+    display: none; } }
+
+/*------- Banner ----------*/
+.main-banner {
+  position: relative;
+  background: red;
+  height: 100%; }
+
+.banner-image {
+  margin-top: 2.1rem; }
+
+.div {
+  width: 80%;
+  height: 70%;
+  background: #5368df;
+  position: absolute;
+  top: calc(1.5rem * 3.4);
+  right: 0;
+  z-index: -1;
+  border-bottom-left-radius: 5rem; }
