@@ -1,0 +1,15 @@
+.simple-text {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  &__title {
+    font-weight: 500;
+    color: $veryBarkBlue;
+  }
+  &__paragraph {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    padding: 1.5rem;
+    color: $grayishBlue;
+  }
+}
