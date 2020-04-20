@@ -1,16 +1,3 @@
-const iconH = document.querySelector('#icon-hamburger');
-const close = document.getElementById('close');
-const nav = document.querySelector('.nav-list');
-iconH.addEventListener('click', () => {
-  nav.classList.add('active');
-  iconH.style.display = 'none';
-});
-
-close.addEventListener('click', () => {
-  nav.classList.remove('active');
-  iconH.style.display = 'block';
-});
-/* tabs */
 (function (d) {
   const tabs = Array.prototype.slice.apply(d.querySelectorAll('.tab'));
   const panels = Array.prototype.slice.apply(d.querySelectorAll('.tab-panel'));
