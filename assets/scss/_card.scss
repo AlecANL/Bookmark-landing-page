@@ -1,5 +1,19 @@
+.main-content-cards {
+  @include from(m) {
+    padding: 5rem;
+  }
+}
 .extension-content {
   text-align: center;
+  @include from(m) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.extension-data {
+  @include from(m) {
+    width: 50%;
+  }
 }
 .extension__title {
   padding: 0.2em;

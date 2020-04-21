@@ -1,3 +1,13 @@
+.main-section-question-data {
+  @include from(m) {
+    padding: 5rem;
+  }
+}
+.content-question {
+  @include from(m) {
+    width: 50%;
+  }
+}
 .question-data {
   text-align: center;
 }
