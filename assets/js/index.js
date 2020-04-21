@@ -25,3 +25,15 @@ close.addEventListener('click', () => {
     }
   });
 })(document);
+/*Collapse */
+
+const item = Array.prototype.slice.apply(document.querySelectorAll('.item-collapse'));
+const panelCollapse = Array.prototype.slice.apply(document.querySelectorAll('.panel-c'));
+
+const list = document.getElementById('item').addEventListener('click', (e) => {
+  if (e.target.classList.contains('item-collapse')) {
+    let i = item.indexOf(e.target);
+    panelCollapse.map((panelC) => panelC.classList.remove('show'));
+    panelCollapse[i].classList.toggle('show');
+  }
+});

@@ -1,0 +1,46 @@
+.collapse-menu {
+  //background: red;
+  height: 100%;
+  //text-align: center;
+  position: relative;
+  padding: 1.5em;
+  font-size: 0.8rem;
+  color: $grayishBlue;
+}
+
+.bt-top {
+  //position: absolute;
+  //left: 50%;
+  //transform: translate(-50%);
+  //bottom: 1.5rem;
+  //margin-top: 25rem;
+  margin-left: 35%;
+}
+.item-collapse {
+  //background: blue;
+  margin-top: 0.5rem;
+  border-bottom: 1px solid;
+  cursor: pointer;
+  list-style: none;
+  padding: 1em;
+  position: relative;
+  & > img {
+    position: absolute;
+    right: 0;
+  }
+}
+.panel-c {
+  font-size: 0.9rem;
+  color: $grayishBlue;
+  padding: 1em;
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  display: none;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.show {
+  max-height: 99em;
+  transition: all 0.5s ease-in-out;
+  display: block;
+}
