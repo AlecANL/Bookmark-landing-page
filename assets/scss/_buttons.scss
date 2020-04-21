@@ -12,6 +12,12 @@
   background: hsl(0, 0%, 95%);
   color: $veryBarkBlue;
 }
-.to-top-1 {
+.top-1 {
   margin-top: 0.9rem;
+  @include from(m) {
+    position: absolute;
+  }
+}
+.to {
+  left: calc(2rem * 4);
 }
