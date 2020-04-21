@@ -1,5 +1,7 @@
 # Frontend Mentor - Bookmark landing page
 
+[Build Landige Page](design/screen.png)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
