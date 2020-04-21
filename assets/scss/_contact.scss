@@ -1,0 +1,28 @@
+.contact-content {
+  background: $sofBlue;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2rem;
+}
+.contact-mail {
+  padding: 1em;
+  width: 100%;
+  border: none;
+  border-radius: 0.2em;
+  margin-top: 1rem;
+}
+.btn-red {
+  background: $softRed;
+  color: #fff;
+  margin-top: 1rem;
+}
+.contact-data {
+  color: #fff;
+}
+.contact-title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+.contact-sub-title {
+  margin-top: 0.6rem;
+}

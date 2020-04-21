@@ -1,0 +1,76 @@
+.main-footer {
+  background: $veryBarkBlue;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include from(m) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.l-flex {
+  @include from(m) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.logo-footer {
+  margin-bottom: 1rem;
+  @include from(m) {
+    margin: 0;
+  }
+}
+.foo-menu {
+  padding: 1em;
+  text-align: center;
+  @include from(m) {
+    display: flex;
+    width: 50%;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+    //flex-direction: row;
+  }
+  &__item {
+    color: #fff;
+    list-style: none;
+    padding: 0.5em;
+    margin-top: 0.6rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    &:hover {
+      border: 1px solid $softRed;
+      border-radius: 0.2rem;
+    }
+    @include from(m) {
+      //display: flex;
+      //flex-direction: row;
+      display: inline-block;
+      margin-top: 0;
+      padding: 0.5rem;
+    }
+  }
+  &__link {
+    color: #fff;
+    @include from(m) {
+      padding: 0.5rem;
+    }
+  }
+}
+.footer-icons {
+  text-align: center;
+  padding: 0.5rem;
+  //background: yellow;
+  @include from(m) {
+    display: inline-block;
+  }
+}
+.icon-fb {
+  padding: 1rem;
+}
+.icon-tw {
+  padding: 1rem;
+}

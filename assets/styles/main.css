@@ -330,3 +330,99 @@ h6 {
   max-height: 99em;
   transition: all 0.5s ease-in-out;
   display: block; }
+
+.contact-content {
+  background: #5368df;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2rem; }
+
+.contact-mail {
+  padding: 1em;
+  width: 100%;
+  border: none;
+  border-radius: 0.2em;
+  margin-top: 1rem; }
+
+.btn-red {
+  background: #fa5757;
+  color: #fff;
+  margin-top: 1rem; }
+
+.contact-data {
+  color: #fff; }
+
+.contact-title {
+  font-size: 0.7rem;
+  text-transform: uppercase; }
+
+.contact-sub-title {
+  margin-top: 0.6rem; }
+
+.main-footer {
+  background: #252b46;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media screen and (min-width: 900px) {
+    .main-footer {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+@media screen and (min-width: 900px) {
+  .l-flex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between; } }
+
+.logo-footer {
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 900px) {
+    .logo-footer {
+      margin: 0; } }
+
+.foo-menu {
+  padding: 1em;
+  text-align: center; }
+  @media screen and (min-width: 900px) {
+    .foo-menu {
+      display: flex;
+      width: 50%;
+      padding: 0;
+      justify-content: space-around;
+      align-items: center; } }
+  .foo-menu__item {
+    color: #fff;
+    list-style: none;
+    padding: 0.5em;
+    margin-top: 0.6rem;
+    cursor: pointer;
+    text-transform: uppercase; }
+    .foo-menu__item:hover {
+      border: 1px solid #fa5757;
+      border-radius: 0.2rem; }
+    @media screen and (min-width: 900px) {
+      .foo-menu__item {
+        display: inline-block;
+        margin-top: 0;
+        padding: 0.5rem; } }
+  .foo-menu__link {
+    color: #fff; }
+    @media screen and (min-width: 900px) {
+      .foo-menu__link {
+        padding: 0.5rem; } }
+
+.footer-icons {
+  text-align: center;
+  padding: 0.5rem; }
+  @media screen and (min-width: 900px) {
+    .footer-icons {
+      display: inline-block; } }
+
+.icon-fb {
+  padding: 1rem; }
+
+.icon-tw {
+  padding: 1rem; }
