@@ -1,6 +1,6 @@
 # Frontend Mentor - Bookmark landing page
 
-[Build Landige Page](design/screen.png)
+![Build Landige Page](./design/screen.png)
 
 ## Welcome! 👋
 
