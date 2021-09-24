@@ -1,0 +1,18 @@
+@import './nav.css';
+.header {
+  outline: 1px solid red;
+  padding-inline: 2rem;
+  padding-block: 1.25rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    display: none;
+  }
+}

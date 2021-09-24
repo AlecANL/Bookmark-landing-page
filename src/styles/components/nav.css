@@ -1,0 +1,96 @@
+.navigation {
+  display: none;
+  position: fixed;
+  inset-inline: 0;
+  inset-block: 0;
+  background-color: var(--bg-layer);
+  backdrop-filter: blur(2rem);
+  padding: 2rem;
+}
+.navigation__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-block: 1.25rem;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation__item {
+  inline-size: 100%;
+  text-align: center;
+}
+.navigation__item a {
+  display: inline-block;
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  color: var(--just-white);
+  text-transform: uppercase;
+  letter-spacing: 2.31px;
+  font: var(--mobile-linkRegular);
+}
+.navigation__item:active {
+  transform: scale(0.98);
+}
+
+.navigation__item.login {
+  margin-block-start: 1rem;
+  border: 1px solid var(--just-white);
+  border-radius: 0.5rem;
+  font: var(--mobile-linkBold);
+}
+.navigation__footer {
+  position: absolute;
+  inset-block-end: 2rem;
+  inset-inline-start: 50%;
+  display: flex;
+  gap: 2rem;
+  transform: translateX(-50%);
+}
+.navigation.is-active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    position: static;
+    background-color: unset;
+    padding: 0;
+  }
+  .navigation__footer,
+  .navigation__heading {
+    display: none;
+  }
+  .navigation__list {
+    flex-direction: row;
+  }
+  .navigation__item a {
+    font: var(--desktop-linkRegular);
+    letter-spacing: 1.5px;
+    color: var(--bg-layer);
+    border: 1px solid transparent;
+  }
+  .navigation__item a:hover {
+    color: var(--just-pink);
+  }
+  .navigation__item.login {
+    margin: 0;
+    font: var(--desktop-linkBold);
+    background: var(--just-pink);
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+  }
+  .navigation__item.login a {
+    color: var(--just-white);
+  }
+  .navigation__item.login:hover {
+    border: 1px solid var(--just-pink);
+    background-color: var(--just-white);
+  }
+  .navigation__item.login a:hover {
+    color: var(--just-pink);
+  }
+}
