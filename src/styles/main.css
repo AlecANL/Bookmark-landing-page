@@ -1,13 +1,25 @@
 @import './components/header.css';
+@import './components/hero.css';
+@import './components/buttons.css';
 :root {
   --bg-layer: rgba(36, 42, 69, 0.904);
   --just-white: #fff;
   --just-pink: #fa5959;
+  --just-blue: #5267df;
+  --soft-white: #f7f7f7;
   --baseFont: 'Rubik', sans-serif;
   --mobile-linkBold: 500 1.25rem / 1.0625rem var(--baseFont);
   --mobile-linkRegular: 400 1.25rem / 1.0625rem var(--baseFont);
+  --mobile-headline1Bold: 500 1.875rem / 2.5rem var(--baseFont);
+  --mobile-body1Regular: 400 0.9375rem / 1.5625rem var(--baseFont);
+  --mobile-body2Regular: 400 1rem / 1.0625rem var(--baseFont);
+  --mobile-headline3Bold: 500 1.5rem / 3.25rem var(--baseFont);
+  --mobile-buttonBold: 500 0.875rem / 1.75rem var(--baseFont);
   --desktop-linkBold: 500 0.8125rem / 1.0625rem var(--baseFont);
   --desktop-linkRegular: 400 0.8125rem / 1.0625rem var(--baseFont);
+  --desktop-headline1Bold: 500 3rem / 3.25rem var(--baseFont);
+  --desktop-body1Regular: 400 1.125rem / 1.75rem var(--baseFont);
+  --desktop-headline3Bold: 500 2rem / 3.25rem var(--baseFont);
 }
 
 * {
@@ -21,6 +33,15 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 a {
   text-decoration: none;

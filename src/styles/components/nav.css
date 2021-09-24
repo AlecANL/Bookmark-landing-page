@@ -6,6 +6,7 @@
   background-color: var(--bg-layer);
   backdrop-filter: blur(2rem);
   padding: 2rem;
+  z-index: 99;
 }
 .navigation__heading {
   display: flex;
@@ -58,6 +59,7 @@
   .navigation {
     position: static;
     background-color: unset;
+    display: block;
     padding: 0;
   }
   .navigation__footer,

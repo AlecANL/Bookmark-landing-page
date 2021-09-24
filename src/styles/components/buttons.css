@@ -1,0 +1,28 @@
+.btn {
+  border-color: transparent;
+  padding-inline: 1rem;
+  padding-block: 0.625rem;
+  font: var(--mobile-buttonBold);
+  text-transform: capitalize;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.is-blue {
+  background-color: var(--just-blue);
+  color: var(--just-white);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+}
+.is-white {
+  background-color: var(--soft-white);
+  color: rgba(36, 42, 69, 0.507);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    padding-inline: 1.5rem;
+  }
+}
