@@ -6,6 +6,7 @@
   text-transform: capitalize;
   border-radius: 0.3125rem;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 .btn:active {
   transform: scale(0.98);
@@ -15,10 +16,30 @@
   color: var(--just-white);
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
 }
+.is-blue:hover {
+  background-color: var(--just-white);
+  border-color: var(--just-blue);
+  color: var(--just-blue);
+}
 .is-white {
   background-color: var(--soft-white);
   color: rgba(36, 42, 69, 0.507);
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+}
+.is-white:hover {
+  background-color: var(--just-white);
+  color: var(--just-dark);
+  border-color: var(--just-dark);
+}
+.is-pink {
+  background-color: var(--just-pink);
+  color: var(--just-white);
+  text-align: center;
+}
+.is-pink:hover {
+  background-color: var(--just-white);
+  border-color: var(--just-pink);
+  color: var(--just-pink);
 }
 
 @media screen and (min-width: 768px) {

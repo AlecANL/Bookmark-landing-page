@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  padding-block: 1.25rem;
+  padding-block-end: 1.25rem;
 }
 .navigation__list {
   display: flex;
